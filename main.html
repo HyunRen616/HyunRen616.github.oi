@@ -5,38 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Bello - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="./js/main.js"></script>
 
 </head>
 <body>
 
     <header>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dylan-bello-729bba232/" target="_blank"><img src="./images/icons8-linkedin-500.png" alt="LinkedIn"></a>
+
+            <a href="https://www.instagram.com/darkael616/" target="_blank"><img src="./images/icons8-instagram-500.png" alt="Instagram"></a>
+            
+            <a href="https://github.com/HyunRen616" target="_blank"><img src="./images/icons8-github-500.png" alt="GitHub"></a>            
+          </div>
         <h1>Dylan Bello</h1>
         <br>
     </header>
 
-    <section>
-        <h2>About Me</h2>
+    <section id="">
+        <h2 onclick="toggleSection('d1')">d1</h2>
         <p>
-            Welcome to my portfolio! I am a passionate web developer with expertise in front-end and back-end technologies.
-            This is a brief overview of my skills and projects.
+            Welcome to the portfolio! 
         </p>
     </section>
 
     <section>
         <h2>Projects</h2>
-        <div class="projects">
+        <div class="all_projects">
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
+                <h3>Solaris Assault</h3>
+                <p>Only one species was made at gods image: humanity. Defend its existance in Solaris Assault</p>
+                <img src="./images/Capture02.PNG" alt="Project 1" class="project-thumbnail" onclick="openProject('project1')">
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
+                <h3>Hohle</h3>
+                <p>Best thing about being a sorcerer? Purging demons in a dark and terrifying dungeon like its nothing</p>
+                <img src="./images/Capture.PNG" alt="Project 2" class="project-thumbnail" onclick="openProject('project2')">
             </div>
-            <!-- Add more projects as needed -->
+            
         </div>
     </section>
-
 
 </body>
 </html>
