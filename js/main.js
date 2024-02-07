@@ -1,16 +1,41 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function openProject(projectId) {
-        window.location.href = 'project.html?id=' + projectId;
-      }
-    
-      function toggleSection(sectionId) {
-        // Hide all sections
-        document.querySelectorAll('section[id^="d"]').forEach(function (section) {
-            section.style.display = 'none';
-        });
+function openProject(projectFileName) {
+  window.location.href = projectFileName;
+}
 
-        // Show the selected section
-        document.getElementById(sectionId).style.display = 'block';
-    }
-    
+function showDisplay1() {
+  console.log('Button 1 clicked');
+  document.querySelector('.display-1').style.display = 'block';
+  document.querySelector('.display-2').style.display = 'none';
+}
+
+function showDisplay2() {
+  document.querySelector('.display-1').style.display = 'none';
+  document.querySelector('.display-2').style.display = 'block';
+}
+
+function downloadWordFile() {
+  // Replace 'your_word_file.docx' with the actual path or URL of your Word file
+  const wordFileUrl = './files/Dylan_Bello.Resume.docx';
+  const link = document.createElement('a');
+  link.href = wordFileUrl;
+  link.download = 'downloaded_file.docx';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+} 
+
+function displayImage(imageSrc) {
+  document.getElementById('displayed-image').src = imageSrc;
+  document.getElementById('displayed-image').style.display = 'block';
+  document.getElementById('displayed-video').style.display = 'none';
+}
+
+function displayVideo(videoSrc) {
+  document.getElementById('displayed-video').src = videoSrc;
+  document.getElementById('displayed-video').style.display = 'block';
+  document.getElementById('displayed-image').style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Your other code inside the DOMContentLoaded event listener
 });

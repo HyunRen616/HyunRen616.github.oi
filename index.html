@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Bello - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dylan-bello-729bba232/" target="_blank"><img src="./images/icons8-linkedin-500.png" alt="LinkedIn"></a>
+
+            <a href="https://www.instagram.com/darkael616/" target="_blank"><img src="./images/icons8-instagram-500.png" alt="Instagram"></a>
+            
+            <a href="https://github.com/HyunRen616" target="_blank"><img src="./images/icons8-github-500.png" alt="GitHub"></a>            
+          </div>
+        <h1>Dylan Bello</h1>
+        <br>
+    </header>
+
+    <div class="black-section">
+        <button class="button" onclick="showDisplay1()">About Me</button>
+        <button class="button" onclick="downloadWordFile()">Download Resume</button>
+        <button class="button" onclick="showDisplay2()">other ventures</button>
+    </div>
+
+    <div class="display-1">
+        <section id="first_display">
+            <h2>About Me</h2>
+            <p>
+                Greetings everyone, my name is Dylan. I am a video game programmer based in Montreal, QC. I love videogames and im particulary fond of creating new and cool stuff to share with people. I am always eager to learn more and meet new people.
+            </p>
+        </section>
+    </div>
+
+    <div class="display-2">
+        <div>
+            <section>
+                <h1>ART AND ANIMATIONS</h1>
+                <p>
+                    Coming soon...
+                </p>
+            </section>
+        </div>
+        <!--
+        <div id="image-bar">
+            <img class="miniature-image" src="image3.jpg" alt="Image 1" onclick="displayVideo('./videos/1202295 - Trabajo de recortes.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 2" onclick="displayVideo('./videos/Cambio de expresion - 1202295.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 3" onclick="displayVideo('./videos/Multiplano animacion - 1202295.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 4" onclick="displayVideo('./videos/Projecto Animacion - 1202295.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 5" onclick="displayVideo('./videos/Rotoscopia - 1202295.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 6" onclick="displayVideo('./videos/Trabajo LipSync.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 7" onclick="displayVideo('./videos/Trabajo numero 4 - 1202295.mp4')">
+            <img class="miniature-image" src="image3.jpg" alt="Image 8" onclick="displayVideo('./videos/Trabajo primer principio.mp4')">
+        </div>
+        <div id="display-area">
+            <img id="displayed-image" alt="Displayed Image">
+            <video id="displayed-video" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    -->
+
+    <section id="project_display">
+        <h2>Projects</h2>
+        <div class="all_projects">
+            <div class="project">
+                <h3>Solaris Assault</h3>
+                <p>Only one species was made at gods image: humanity. Defend its existance in Solaris Assault</p>
+                <img src="./images/Capture02.PNG" alt="Project 1" class="project-thumbnail" onclick="openProject('solaris_assault.html')">
+            </div>
+            <div class="project">
+                <h3>Hohle</h3>
+                <p>Best thing about being a sorcerer? Purging demons in a dark and terrifying dungeon like its nothing</p>
+                <img src="./images/Capture.PNG" alt="Project 2" class="project-thumbnail" onclick="openProject('hohle.html')">
+            </div>
+            <div class="project">
+                <h3>Unreal 5 Prototype</h3>
+                <p>Best thing about being a sorcerer? Purging demons in a dark and terrifying dungeon like its nothing</p>
+                <img src="./images/Capture.PNG" alt="Project 2" class="project-thumbnail" onclick="openProject('hohle.html')">
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
