@@ -14,7 +14,7 @@ function showDisplay2() {
 }
 
 function downloadWordFile() {
-  // Replace 'your_word_file.docx' with the actual path or URL of your Word file
+
   const wordFileUrl = './files/Dylan_Bello.Resume.docx';
   const link = document.createElement('a');
   link.href = wordFileUrl;
