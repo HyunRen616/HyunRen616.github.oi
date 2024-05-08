@@ -15,10 +15,10 @@ function showDisplay2() {
 
 function downloadWordFile() {
 
-  const wordFileUrl = './files/Dylan_Bello.Resume.docx';
+  const wordFileUrl = './files/Dylan_Bello_ResumeCV.docx';
   const link = document.createElement('a');
   link.href = wordFileUrl;
-  link.download = 'downloaded_file.docx';
+  link.download = 'Dylan_Resume_file.docx';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
