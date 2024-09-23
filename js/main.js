@@ -15,7 +15,7 @@ function showDisplay2() {
 
 function downloadWordFile() {
 
-  const wordFileUrl = './files/Dylan_Bello_ResumeCV.docx';
+  const wordFileUrl = './files/Dylan_Bello_CV.docx';
   const link = document.createElement('a');
   link.href = wordFileUrl;
   link.download = 'Dylan_Resume_file.docx';
