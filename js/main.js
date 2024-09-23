@@ -18,7 +18,7 @@ function downloadWordFile() {
   const wordFileUrl = './files/Dylan_Bello_CV.docx';
   const link = document.createElement('a');
   link.href = wordFileUrl;
-  link.download = 'Dylan_Resume_file.docx';
+  link.download = 'Dylan_Bello_CV.docx';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
